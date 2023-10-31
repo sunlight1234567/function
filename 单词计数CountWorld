@@ -1,0 +1,12 @@
+//输入一串字符
+int CountWord(char str[])
+{
+    int i,num=0;
+    char prev=' ';
+    for(i=0; str[i]!='\0'; i++)
+    {
+        if(prev==' '&&str[i]!=' ')++num;
+        prev=str[i];
+    }
+    return num;
+}
