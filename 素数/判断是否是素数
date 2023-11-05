@@ -1,0 +1,10 @@
+bool prime(int a)
+{int sq=sqrt(a);bool bo=true;
+    for(int i=2;i<=sq;i++)
+    {
+        if(a%i==0){bo=false;break;}
+    }
+    if(a==1)bo=false;
+
+    return bo;
+}
