@@ -1,7 +1,7 @@
 //原始筛选法->适用于单个元素的检验
 bool isprime_A(int n)
 {
-    for(int i = 2;i < sqrt(n);i++)
+    for(int i = 2;i <=sqrt(n);i++)
     {
         if(n % i == 0)
         {
