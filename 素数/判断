@@ -1,8 +1,8 @@
 /*判断是否是质数，返回ture或false
 需要头文件<cmath>*/
 bool prime(int a)
-{int sq=sqrt(a);bool bo=true;
-    for(int i=2;i<=sq;i++)
+{bool bo=true;
+    for(int i=2;i<=sqrt(a);i++)
     {
         if(a%i==0){bo=false;break;}
     }
