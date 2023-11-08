@@ -1,0 +1,30 @@
+//输入十进制数N和进制R<=20
+//输出R进制数
+void scaletrans(int N,int R)
+{
+int size=0;
+        for(int i=0;N!=0;i++)
+        {
+            num[i]=N%R;
+            size++;
+            N/=R;
+        }
+        for(int i=size-1;i>=0;i--)
+        {
+            if(i==size-1&&num[i]==0){break;}
+            switch(num[i])
+            {
+                case 10:cout<<'A';break;
+                case 11:cout<<'B';break;
+                case 12:cout<<'C';break;
+                case 13:cout<<'D';break;
+                case 14:cout<<'E';break;
+                case 15:cout<<'F';break;
+                case 16:cout<<'G';break;
+                case 17:cout<<'H';break;
+                case 18:cout<<'I';break;
+                case 19:cout<<'J';break;
+                default:cout<<num[i];
+            }
+        }
+}
