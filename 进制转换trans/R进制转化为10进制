@@ -1,1 +1,17 @@
-
+//输入进制R
+//输入R进制字符串num[]
+//返回10进制数
+int trans10(int R,char num[])
+{
+    int n_10=0;
+    int weiquan=1;
+    int size=strlen(num);
+    for(int i=size-1;i>=0;i--)
+    {
+        int a=0;
+        if(num[i]>='0'&&num[i]<='9')a=num[i]-'0';//转换成int数字
+        else a=num[i]-'A'+10;
+        n_10+=a*weiquan;
+        weiquan*=R;
+    }
+    return n_10;
