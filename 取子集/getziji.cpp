@@ -6,7 +6,7 @@ using namespace std;
 
 int count=0;
 int m,n;
-//´Óm¸öÔªËØÀïÈ¡³ön¸ö,²¢Êä³öÈ«²¿Çé¿ö
+//ä»Žmä¸ªå…ƒç´ é‡Œå–å‡ºnä¸ª,å¹¶è¾“å‡ºå…¨éƒ¨æƒ…å†µ
 int main()
 {
 cin>>m>>n;
@@ -24,7 +24,7 @@ void getziji(char *a,int *z,int p);
     {
         cin>>a[i];
     }
-    for(int i=0; i<n; i++)//Êä³ö³õÊ¼Çé¿ö
+    for(int i=0; i<n; i++)//è¾“å‡ºåˆå§‹æƒ…å†µ
     {
         cout<<a[z[i]];
     }
@@ -46,7 +46,7 @@ void getziji(char *a,int *z,int p)
         {
             z[i]=z[i-1]+1;
         }
-        for(int i=0; i<n; i++)//Êä³öÒ»ÖÖÇé¿ö
+        for(int i=0; i<n; i++)//è¾“å‡ºä¸€ç§æƒ…å†µ
         {
             cout<<a[z[i]];
         }
