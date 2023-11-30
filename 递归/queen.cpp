@@ -2,8 +2,8 @@
 #include<cstring>
 using namespace std;
 
-//°Ë»ÊºóÎÊÌâµÄÊµÏÖ
-//ÎÊÌâ£ºÖ»ÄÜÇóÒ»×é½â¡¢Ö»ÄÜÇó°Ë»Êºó
+//å…«çš‡åé—®é¢˜çš„å®ç°
+//é—®é¢˜ï¼šåªèƒ½æ±‚ä¸€ç»„è§£ã€åªèƒ½æ±‚å…«çš‡å
 int row[9]={0};
 bool queen(int k)
 {
@@ -18,7 +18,7 @@ bool queen(int k)
             else if(queen(k+1))return true;
         }
     }
-    return false;//µÚkÁĞÎŞ¿ÉĞĞ½â
+    return false;//ç¬¬kåˆ—æ— å¯è¡Œè§£
 }
 bool judge(int i,int k)
 {
